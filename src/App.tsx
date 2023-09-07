@@ -1,5 +1,11 @@
+import UpdateProductsPage from "./pages/UpdateProductsPage";
+
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <UpdateProductsPage />
+    </div>
+  );
 }
 
 export default App;
