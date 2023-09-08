@@ -134,6 +134,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   --color-blue: #1e2044;
   --color-green: #3cab81;
+  --color-gray: #EDEDED;
   --color-gray0: #9c9c9c;
   --color-gray1: #717171;
 }
