@@ -74,6 +74,7 @@ export default function UpdateProductsPage() {
 
 const Main = styled.main`
   padding: 5%;
+  padding-left: 400px;
 
   div {
     display: flex;
