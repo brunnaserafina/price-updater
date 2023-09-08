@@ -26,4 +26,8 @@ const Aside = styled.aside`
   img {
     cursor: pointer;
   }
+
+  @media(max-width: 800px) {
+    display: none;
+  }
 `;
