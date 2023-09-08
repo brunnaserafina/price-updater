@@ -28,7 +28,7 @@ export default function FormFileValidation({
   ) {
     e.preventDefault();
 
-    if (file) {
+    if (file?.type === "text/csv") {
       try {
         const formData = new FormData();
         formData.append("file", file);
@@ -44,6 +44,9 @@ export default function FormFileValidation({
           console.error(error);
         }
       }
+    } else {
+      alert("Erro: o arquivo deve ser do tipo CSV, faça o upload novamente.");
+      return;
     }
   }
 
@@ -84,7 +87,6 @@ const Form = styled.form`
     margin-bottom: 10px;
     cursor: pointer !important;
   }
-
 
   @media (max-width: 800px) {
     label {
