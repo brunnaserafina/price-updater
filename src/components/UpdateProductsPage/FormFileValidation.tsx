@@ -41,7 +41,7 @@ export default function FormFileValidation({
           setContainError(true);
           setProducts(error.response.data);
         } else {
-          console.error(error);
+          alert(error.response.data.message);
         }
       }
     } else {
